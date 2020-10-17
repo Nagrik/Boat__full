@@ -417,7 +417,7 @@ button{
 }
 
 .futured__photoset{
-  width: 1185px;
+  max-width: 1185px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -432,6 +432,7 @@ button{
   width: 574px;
   height: 340px;
   border-radius: 5px;
+  margin: 0 auto;
 }
 .futured__photoset-item2{
   background-image: url(../img/07.png);
@@ -441,6 +442,7 @@ button{
   width: 574px;
   height: 340px;
   border-radius: 5px;
+  margin: 0 auto;
 }
 .futured__photoset-item3{
   background-image: url(../img/08.png);
@@ -450,6 +452,7 @@ button{
   width: 574px;
   height: 340px;
   border-radius: 5px;
+  margin: 0 auto;
   margin-top: 30px;
 }
 .futured__photoset-item4{
@@ -460,6 +463,8 @@ button{
   width: 574px;
   height: 340px;
   border-radius: 5px;
+
+  margin: 0 auto;  
   margin-top: 30px;
 }
 
@@ -575,9 +580,10 @@ button{
   background-color: #404040;
   margin-top: 90px;
   &__wrapper{
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     height: 325px;
+    padding: 0 30px;
   }
 }
 
@@ -624,7 +630,7 @@ button{
   padding-left: 25px;
 }
 .newsletter__input{
-  width: 299px;
+  width: 20.764vw;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   font-family: $Raleway;
@@ -647,14 +653,14 @@ button{
   letter-spacing: 0.56px;
   color: #ffffff;
   width: 147px;
-  height: 45px;
+  height: 46px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding-left: 30px;
+  padding-left: 2.083vw;
   outline: none;
   border: none;
   cursor: pointer;
-  margin-left: 22px;
+  margin-left: 1.528vw;
   margin-top: 14px;
 }
 .networks{
@@ -687,7 +693,51 @@ button{
 }
 
 //-------------------/FOOTER---------------------------------------
+@media(max-width:927px){
+.menu1{
+  display: none;
+}
+.menu2{
+  display: none;
+}
+.newsletter{
+  margin: 0 auto;
+}
+}
 
+@media(max-width:780px){
+.destination__title{
+  margin-top: 200px;
+}  
+.header__menu{
+  display: none;
+}
+.own__title{
+  padding-top: 28px;
+}
+.input{
+  max-width: 575px;
+ width: 100px;
+}
+}
 
-
-
+@media(max-width:562px){
+  .destination__content-top{
+    flex-wrap: wrap;
+  }
+  .destination__content-top_right{
+    margin: 0 auto;
+  }
+  .destination__content-bot{
+    flex-wrap: wrap;
+  }
+  .destination__content-bot_item1{
+    margin: 0 auto;
+  }
+  .destination__content-bot_item2{
+    margin: 0 auto;
+  }
+  .destination__content-bot_item3{
+    margin: 0 auto;
+  }
+}
